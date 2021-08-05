@@ -1,0 +1,64 @@
+.game{
+    width: 600px;
+    height: 200px;
+    border-bottom: 1px solid black;
+    margin: auto;
+}
+#sonik{
+    background-image: url(/images/sonik.png);
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+    top: 150px;
+    position: relative; 
+}
+
+#robot{
+    background-image: url(/images/robot.png);
+    width: 60px;
+    height: 55px;
+    background-size: 60px 55px;
+    top: 95px;
+    position: relative;
+    left: 540px;
+    animation: sonik-run 1s linear infinite;
+}
+@keyframes sonik-run{
+    0%{
+        left: 600px;
+    }
+    100%{
+        left: 0px;
+    }
+}
+.jump{
+    animation: jump 0.4s linear;
+}
+@keyframes jump{
+    0%{
+        top: 150px;
+    }
+    25%{
+        top: 60px;
+    }
+    50%{
+        top: 30px;
+    }
+    75%{
+        top: 60px;
+    }
+    100%{
+        top: 150px;
+    }
+/* #sonik-png{
+    width: 50px;
+    height: 50px;
+    padding-top: 150px;
+    position: relative;
+}
+#robot-png{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    padding-left: 00px;
+} */
